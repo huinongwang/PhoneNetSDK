@@ -70,19 +70,19 @@ static PhoneTraceRouteService *ucTraceRouteService_instance = NULL;
     NSMutableString *tracertDetail = [NSMutableString string];
     if (tracertTimeoutRes.length > 0) {
         [tracertDetail appendString:[NSString stringWithFormat:@"%d %@",(int)tracertRes.hop,tracertTimeoutRes]];
-        _tracertResultHandler(tracertDetail,tracertRes.dstIp);
+        _tracertResultHandler(tracertDetail,tracertRes.dstIp, NO);
         return;
     }
     
     NSString *tracertNormalDetail = [NSString stringWithFormat:@"%d  %@(%@) %@",(int)tracertRes.hop,tracertRes.ip,tracertRes.ip,mutableDurations];
     [tracertDetail appendString:tracertNormalDetail];
-    _tracertResultHandler(tracertDetail,tracertRes.dstIp);
+    _tracertResultHandler(tracertDetail,tracertRes.dstIp, NO);
     
 }
 
 - (void)tracerouteFinishedWithUCTraceRoute:(PhoneTraceRoute *)ucTraceRoute
 {
-    
+    _tracertResultHandler(nil,nil, YES);
 }
 
 @end
