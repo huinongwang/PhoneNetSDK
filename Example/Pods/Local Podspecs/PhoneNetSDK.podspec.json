@@ -1,0 +1,22 @@
+{
+  "name": "PhoneNetSDK",
+  "version": "0.1.0",
+  "summary": "A short description of PhoneNetSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yuandi/PhoneNetSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yuandi": "yuandi@cnhnkj.com"
+  },
+  "source": {
+    "git": "https://github.com/yuandi/PhoneNetSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "PhoneNetSDK/Classes/**/*"
+}

@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'PhoneNetSDK_Example' do
+  pod 'PhoneNetSDK', :path => '../'
+
+  target 'PhoneNetSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

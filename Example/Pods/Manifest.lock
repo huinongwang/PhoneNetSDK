@@ -1,0 +1,16 @@
+PODS:
+  - PhoneNetSDK (0.1.0)
+
+DEPENDENCIES:
+  - PhoneNetSDK (from `../`)
+
+EXTERNAL SOURCES:
+  PhoneNetSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PhoneNetSDK: 38e2bb506d6b0c52b069617f65104245963a0805
+
+PODFILE CHECKSUM: f7cea6088d0d965b6bdffaf8b64aedf50343bcb6
+
+COCOAPODS: 1.11.2

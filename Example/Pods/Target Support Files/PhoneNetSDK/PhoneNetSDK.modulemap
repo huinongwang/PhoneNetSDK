@@ -1,0 +1,6 @@
+framework module PhoneNetSDK {
+  umbrella header "PhoneNetSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
