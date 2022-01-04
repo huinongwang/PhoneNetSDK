@@ -7,85 +7,183 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010630D3B61D2585FA0B73122F9F2F96 /* PNDomainLookup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E56FD4C948A8A461CE4808F0452D08E /* PNDomainLookup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0DC24AA88A296F29BE4D451CCF5742D1 /* Pods-PhoneNetSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F2E169BD794F8B9E877361F47E22F0 /* Pods-PhoneNetSDK_Example-dummy.m */; };
 		1151B4FEB206920F71B793D3A6085141 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		504D9937EEE586DB3CE36352EE4D9AA9 /* PhoneNetSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4182F5079AE5825DF40414E448193C /* PhoneNetSDK-dummy.m */; };
-		8D9F5A6744FF3A12D32B757DCFE9681A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1568C62CD94B4BB3F95F44EE139A8CF9 /* PNetworkCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BD36A76F12110B0D5BCC7518E7E7BF /* PNetworkCalculator.m */; };
+		171FC4BC45A669E5246148BCFB29D16F /* PNUdpTraceroute.h in Headers */ = {isa = PBXBuildFile; fileRef = AE4588EC3485C46632623E470DEAC89C /* PNUdpTraceroute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F0EAEEF4088AE42B7F0C23C75B6F65D /* PReportPingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC48790DA2767400DD41B8430DEEEB9 /* PReportPingModel.m */; };
+		1F12548BD6BBF3616A2CF87A8D7D84E1 /* PNSamplePing.h in Headers */ = {isa = PBXBuildFile; fileRef = 82142E27800A44B18195DBC37DDC4812 /* PNSamplePing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F2C7EFFF2EB4ECFDBADCAF457ABE631 /* PReportPingModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F79210497B5DDB7804E598D6EB36998 /* PReportPingModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D4C015DF1E8F4AFEE0E3D9D58269CA5 /* PNTcpPing.m in Sources */ = {isa = PBXBuildFile; fileRef = BF78F3A89D7515F2CB2A933CA661F8E9 /* PNTcpPing.m */; };
+		30801FBEE6B532991CF487F93FE2C5D4 /* PNTcpPing.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C3F40F9DF331D2A999FB9003DA0A41 /* PNTcpPing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		336602174E8A78F94F066ABBE73BA447 /* PNetMLanScanner.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1C571E871C12301E1D181F6FC0AD8BF4 /* PNetMLanScanner.mm */; };
+		3A93D50EABBCFC9F6B377E787743D759 /* PNetworkCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C1B108ED21B802A93D8D3A3BDACC68E /* PNetworkCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41749AEEC57A2CAF4F6025D0309D118D /* PhoneNetSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = FFA1B586A96EF497AD5907844523121C /* PhoneNetSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44D603644D67D9384FF87E27839369F6 /* PPingResModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F21962FE43517B6976DF92385B7323EE /* PPingResModel.m */; };
+		4C8F8A7A43C4F952FC4B1043E91F55F3 /* PhonePing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9268CBD3073AC2DBFA8C03E5588C3FA6 /* PhonePing.mm */; };
+		51F5F2F1AF07801F9B401D102FE9BDC4 /* UCNetworkService.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC418E8FF88112876280B56FF43AE145 /* UCNetworkService.mm */; };
+		537081AF781C4BA745720233EE0D6833 /* PhoneNetDiagnosisHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A52CAAD89C765E897E03FD7D36F7CB /* PhoneNetDiagnosisHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58E367CEC0F6E1830A7440ED2A5A0EF4 /* PhoneTraceRoute.mm in Sources */ = {isa = PBXBuildFile; fileRef = A03EBAE016A93E44EA36D57C1AC4C88E /* PhoneTraceRoute.mm */; };
+		60127157A95E92836E01A405B965C4BE /* PhoneNetManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6801004F32037456D43E0CE6B2E60F21 /* PhoneNetManager.mm */; };
+		6AC5AA7F765AC71B5070BB8C932770A7 /* PhoneNetSDKConst.h in Headers */ = {isa = PBXBuildFile; fileRef = EC3F0E24D771C743AD93E278DCB5B0B7 /* PhoneNetSDKConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B8833A8D361BC40241260AD9B42CA17 /* PNUdpTraceroute.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7443061CC819C5E47145BC45D97A34 /* PNUdpTraceroute.m */; };
+		6D69951B8F9CF6C0FD977D8D23A44BEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6FA7915CC33DEC04DCFA909D5E7B2CA5 /* PPingResModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D04736248860D5BC781B98D08330DEE /* PPingResModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7ABBA85609246FFCEA5C647EEE7B4604 /* PNetLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 90502E871D6F3C87531E4BC14BDA7E21 /* PNetLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CF123C0A87667FF4B992D819F6EE375 /* PNDomainLookup.mm in Sources */ = {isa = PBXBuildFile; fileRef = 750FB6A54D73527DEF138C6DA0A835F0 /* PNDomainLookup.mm */; };
+		7F204C59CDCF97B7E48699BD81EDD62D /* PTracerRouteResModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66AC6C76D817E23B89E2E1049AE76E1 /* PTracerRouteResModel.m */; };
+		825F0AA7C2DA8B59DE882EFA4099C782 /* PNPortScan.h in Headers */ = {isa = PBXBuildFile; fileRef = E37C37459706D2D20955BB694A8A269B /* PNPortScan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87B0E02D4035F3E2A8E45DD93D6ABBA9 /* PhoneNetSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03328311B4443210B18A17660AA1C86F /* PhoneNetSDK-dummy.m */; };
+		8C74546A0CE4ED281DDD6607994230D6 /* log4cplus_pn.h in Headers */ = {isa = PBXBuildFile; fileRef = 552EC4F04F8313467FAA48F1A9F574E0 /* log4cplus_pn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9412A5DF0EE57EF2C78A14F3D4A9F73F /* PhoneNetSDKHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = B889A3D9BC32FA328720AE9827E1B813 /* PhoneNetSDKHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9703F03F7ED7F343856213B72467807F /* Pods-PhoneNetSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 944C68E4D5B49999AC371FC1E248ABA5 /* Pods-PhoneNetSDK_Tests-dummy.m */; };
-		A0BDC0E625DA803F385B574AA603DDFB /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A3190F635648280BC5CA5BA1F1A5DB /* ReplaceMe.m */; };
+		A133714A12957D81BCA71A2EE729D3AA /* PNetModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C63493011A9E63B71EA25BFB5AD520D /* PNetModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6D7D635F9B0277DFF5BD8727DBBAADA /* PNetLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83A568E0FDC06F31CB11B3B623A0B46D /* PNetLog.mm */; };
 		A9D1A95E64D86BA4FBFEADCD056EBAC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		AE522C6712D2D57CD5E444689E266C79 /* PTracerRouteResModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1864B24E84339A0907BE6DCD818843D3 /* PTracerRouteResModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE777BFDAE8689D690853132C7E5AEE4 /* PNetMLanScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9030A17DD9112E68C4EF61F19000E4 /* PNetMLanScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B76C75F3D861B763CE86E10A8AE4A1E7 /* PNetReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D8627E9595DD2B2EAFD646B684ED8D4 /* PNetReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B78BD775C5AE3E5A216AA16343591041 /* Pods-PhoneNetSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E650DE1FCD1EC1A1B6B15CA47B40B74D /* Pods-PhoneNetSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D12B3CE23FBFB368C726D3743A8EA6B0 /* PhoneNetSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA73FFA8809F1F7D7F6846811264896C /* PhoneNetSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E61E4AE806E0D214BE728865DF2FDF /* PhonePingService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0DCF4C86406259133E378773ABC2C770 /* PhonePingService.mm */; };
+		BD9EBEF201743FDE25FE369FB87092A3 /* PNetInfoTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 65BBC657A726508A73CC2C0B0C37F818 /* PNetInfoTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8B900EDC0A99986F0AE6017E9EAC756 /* PhoneTraceRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 56007D557CCEE14EDD0C8961B939AAB7 /* PhoneTraceRoute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA13F7EFA8CE3651850B3AC698F8C912 /* PhoneTraceRouteService.m in Sources */ = {isa = PBXBuildFile; fileRef = 32995DC18C60A44844FA049FE6AD0249 /* PhoneTraceRouteService.m */; };
+		D14E70DC04B255D619FD1C18EA78AA82 /* PNetTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 032FCDAC11F79699A0B8DE0A93B70B3F /* PNetTools.m */; };
+		D4667721F7B439D46AC03BA4C7D27F9A /* PhonePing.h in Headers */ = {isa = PBXBuildFile; fileRef = 11D3FC0F353F666968DE9A3C0E62457B /* PhonePing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D844FCD2C002D43279A46CD7552E345C /* PhoneTraceRouteService.h in Headers */ = {isa = PBXBuildFile; fileRef = 314DA9662B62430121EC03DB89FEFB3A /* PhoneTraceRouteService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCAE1746BF205F4E391CB1289F18CB5A /* PNetQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 23EE8DE724D79E28AC8101625D9FDACF /* PNetQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEBBF2399860465D50882F4D2FC749A9 /* PhonePingService.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4CE5683533B4FBD2FFF1366724D369 /* PhonePingService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5903C5A686E0F139837ABE28A195EC5 /* PNSamplePing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83B6CF1E01341A860299C9CFDE9FFADA /* PNSamplePing.mm */; };
+		EC651B3C69782CA90DCCEE1B90AA1FDB /* PNetReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FF4A5FE891FCA749BBB881D4738521 /* PNetReachability.m */; };
+		EE684BDF46BF358C3918403023C770E3 /* PhoneNetDiagnosisHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CAFDF6A284CA91006130560E2D4011 /* PhoneNetDiagnosisHelper.m */; };
+		F59BE90FFD5DC3B532518975D5350C5D /* PhoneNetSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3B9CDF16E6644FAFCB4B2ED1D7E713B /* PhoneNetSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6F063B0958B1CCEC188946502E5E5CA /* PNetInfoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A863924CB79B377FA0E40CFE28B0AE40 /* PNetInfoTool.m */; };
+		F723EA30A95D7460B3B1DE54CE4456EF /* PNPortScan.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932D048531436C6561E73C3007FFEC0 /* PNPortScan.mm */; };
+		F8839A7327C1AA43ECE99A7D70E02420 /* PNetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B17FAEE497E99BD4F079B5CA1C78F6 /* PNetModel.m */; };
 		F8888C6C25CD13C0CD6F9402C45FD991 /* Pods-PhoneNetSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8B6F6697DF2073682DC79A1386BFD7 /* Pods-PhoneNetSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8F675297E38F587C667C86654A3ACBF /* PNetTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B34B08DDF78D0EE24B1DC9B218A830E /* PNetTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE459BE381C780D0E7DC8B64E0B42C9 /* UCNetworkService.h in Headers */ = {isa = PBXBuildFile; fileRef = E6C00FC4ABD374B26AB93CCCBD1DE71E /* UCNetworkService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBA59054236B9B44E5C9FF2657F3E3DD /* PNetQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D8A12C9F9837D8A6E3B8AA1D61DB82 /* PNetQueue.m */; };
+		FC31EC35D565EA26C6DA33B4BEBEE565 /* PhoneNetManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D9992B0FDC99DC066703A6DCD854B5 /* PhoneNetManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		53CECA1241EE19DB56107F2661006B73 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 553B16617096BF565D8AA11FC1EE3CBC;
-			remoteInfo = PhoneNetSDK;
-		};
-		C3861C11CE11F50C871BD002C1769A50 /* PBXContainerItemProxy */ = {
+		66C9345F5DBF438B56AD8FBEE82C842F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 00D0CEA5768475BFF116F9ABCAD67EBA;
 			remoteInfo = "Pods-PhoneNetSDK_Example";
 		};
+		DA2122D3B7763616F398D700BA0FDCA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 553B16617096BF565D8AA11FC1EE3CBC;
+			remoteInfo = PhoneNetSDK;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0073DCF2D38A800B194EBACADE31F75C /* Pods-PhoneNetSDK_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PhoneNetSDK_Tests"; path = Pods_PhoneNetSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14FCF5D431A870A70D9B860A224D4152 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		1F425BC193A3D97C58570A70249C70B8 /* PhoneNetSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PhoneNetSDK.modulemap; sourceTree = "<group>"; };
-		22AB0F2E686C00C337C683E596A50AFE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		00D9992B0FDC99DC066703A6DCD854B5 /* PhoneNetManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PhoneNetManager.h; sourceTree = "<group>"; };
+		032FCDAC11F79699A0B8DE0A93B70B3F /* PNetTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PNetTools.m; sourceTree = "<group>"; };
+		03328311B4443210B18A17660AA1C86F /* PhoneNetSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PhoneNetSDK-dummy.m"; sourceTree = "<group>"; };
+		03CAFDF6A284CA91006130560E2D4011 /* PhoneNetDiagnosisHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PhoneNetDiagnosisHelper.m; sourceTree = "<group>"; };
+		05BD36A76F12110B0D5BCC7518E7E7BF /* PNetworkCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PNetworkCalculator.m; sourceTree = "<group>"; };
+		06D8A12C9F9837D8A6E3B8AA1D61DB82 /* PNetQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PNetQueue.m; sourceTree = "<group>"; };
+		08CB4DCCCCE22EE66B7DAA46B4F4D0DF /* PhoneNetSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PhoneNetSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0932D048531436C6561E73C3007FFEC0 /* PNPortScan.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = PNPortScan.mm; sourceTree = "<group>"; };
+		0B34B08DDF78D0EE24B1DC9B218A830E /* PNetTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PNetTools.h; sourceTree = "<group>"; };
+		0DCF4C86406259133E378773ABC2C770 /* PhonePingService.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = PhonePingService.mm; sourceTree = "<group>"; };
+		11D3FC0F353F666968DE9A3C0E62457B /* PhonePing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PhonePing.h; sourceTree = "<group>"; };
+		1864B24E84339A0907BE6DCD818843D3 /* PTracerRouteResModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PTracerRouteResModel.h; sourceTree = "<group>"; };
+		18EE543F27494416DDA87610BEA8FF43 /* PhoneNetSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PhoneNetSDK-Info.plist"; sourceTree = "<group>"; };
+		1C571E871C12301E1D181F6FC0AD8BF4 /* PNetMLanScanner.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = PNetMLanScanner.mm; sourceTree = "<group>"; };
+		23EE8DE724D79E28AC8101625D9FDACF /* PNetQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PNetQueue.h; sourceTree = "<group>"; };
+		29411E68A27C190174F0CBFB1C24379C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		2A6A47EA80A4C15670FC07700D2394E6 /* Pods-PhoneNetSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneNetSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B8914DD376B93A0ADCB06A0F65D7C30 /* Pods-PhoneNetSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneNetSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		2C9030A17DD9112E68C4EF61F19000E4 /* PNetMLanScanner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PNetMLanScanner.h; sourceTree = "<group>"; };
+		314DA9662B62430121EC03DB89FEFB3A /* PhoneTraceRouteService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PhoneTraceRouteService.h; sourceTree = "<group>"; };
+		32995DC18C60A44844FA049FE6AD0249 /* PhoneTraceRouteService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PhoneTraceRouteService.m; sourceTree = "<group>"; };
 		363AEE64491D08E7F843D4EBD3F27BAA /* Pods-PhoneNetSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhoneNetSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		474A2498E611EB2A991C7275224A114A /* PhoneNetSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PhoneNetSDK-Info.plist"; sourceTree = "<group>"; };
 		544E78A30FC4BB1A353CABCB61472485 /* Pods-PhoneNetSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneNetSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		552EC4F04F8313467FAA48F1A9F574E0 /* log4cplus_pn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = log4cplus_pn.h; sourceTree = "<group>"; };
+		56007D557CCEE14EDD0C8961B939AAB7 /* PhoneTraceRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PhoneTraceRoute.h; sourceTree = "<group>"; };
 		5C7C6C6E91D1E7870F145B0B65E4F2F8 /* Pods-PhoneNetSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhoneNetSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5E56FD4C948A8A461CE4808F0452D08E /* PNDomainLookup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PNDomainLookup.h; sourceTree = "<group>"; };
+		5EC48790DA2767400DD41B8430DEEEB9 /* PReportPingModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PReportPingModel.m; sourceTree = "<group>"; };
 		61970C8648BE17E9F27E2EACA69CEBA1 /* Pods-PhoneNetSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PhoneNetSDK_Tests.modulemap"; sourceTree = "<group>"; };
-		66029485D38538E198BADD4964C2C8D6 /* PhoneNetSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PhoneNetSDK-prefix.pch"; sourceTree = "<group>"; };
+		65BBC657A726508A73CC2C0B0C37F818 /* PNetInfoTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PNetInfoTool.h; sourceTree = "<group>"; };
+		66B17FAEE497E99BD4F079B5CA1C78F6 /* PNetModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PNetModel.m; sourceTree = "<group>"; };
+		6801004F32037456D43E0CE6B2E60F21 /* PhoneNetManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = PhoneNetManager.mm; sourceTree = "<group>"; };
+		6F79210497B5DDB7804E598D6EB36998 /* PReportPingModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PReportPingModel.h; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		734F586C98FA5A81F9D151B168A71D9F /* PhoneNetSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PhoneNetSDK.debug.xcconfig; sourceTree = "<group>"; };
+		750865AD352AB7EEF9A5659DEE7F1E2E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		750FB6A54D73527DEF138C6DA0A835F0 /* PNDomainLookup.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = PNDomainLookup.mm; sourceTree = "<group>"; };
 		764E5BC8B35A9631651C5204F9D27CA7 /* Pods-PhoneNetSDK_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PhoneNetSDK_Example"; path = Pods_PhoneNetSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		766EC385D2E26D286A45B24D70E1D713 /* PhoneNetSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PhoneNetSDK.release.xcconfig; sourceTree = "<group>"; };
-		86229DED3EB9688639A52DDF4E7837B8 /* PhoneNetSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PhoneNetSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		79C3F40F9DF331D2A999FB9003DA0A41 /* PNTcpPing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PNTcpPing.h; sourceTree = "<group>"; };
+		7D04736248860D5BC781B98D08330DEE /* PPingResModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PPingResModel.h; sourceTree = "<group>"; };
+		82142E27800A44B18195DBC37DDC4812 /* PNSamplePing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PNSamplePing.h; sourceTree = "<group>"; };
+		837225037123B4E752D5DEC79953D219 /* PhoneNetSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PhoneNetSDK.release.xcconfig; sourceTree = "<group>"; };
+		83A568E0FDC06F31CB11B3B623A0B46D /* PNetLog.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = PNetLog.mm; sourceTree = "<group>"; };
+		83B6CF1E01341A860299C9CFDE9FFADA /* PNSamplePing.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = PNSamplePing.mm; sourceTree = "<group>"; };
+		87A52CAAD89C765E897E03FD7D36F7CB /* PhoneNetDiagnosisHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PhoneNetDiagnosisHelper.h; sourceTree = "<group>"; };
+		8A36946FED97230F0AE09128C3899AC3 /* PhoneNetSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PhoneNetSDK.debug.xcconfig; sourceTree = "<group>"; };
 		8BD8B35522E7773F0AA5C2532C1C3389 /* Pods-PhoneNetSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhoneNetSDK_Tests-Info.plist"; sourceTree = "<group>"; };
-		8F4182F5079AE5825DF40414E448193C /* PhoneNetSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PhoneNetSDK-dummy.m"; sourceTree = "<group>"; };
+		8C63493011A9E63B71EA25BFB5AD520D /* PNetModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PNetModel.h; sourceTree = "<group>"; };
+		90502E871D6F3C87531E4BC14BDA7E21 /* PNetLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PNetLog.h; sourceTree = "<group>"; };
+		9268CBD3073AC2DBFA8C03E5588C3FA6 /* PhonePing.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = PhonePing.mm; sourceTree = "<group>"; };
 		944C68E4D5B49999AC371FC1E248ABA5 /* Pods-PhoneNetSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhoneNetSDK_Tests-dummy.m"; sourceTree = "<group>"; };
+		9A4CE5683533B4FBD2FFF1366724D369 /* PhonePingService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PhonePingService.h; sourceTree = "<group>"; };
+		9C1B108ED21B802A93D8D3A3BDACC68E /* PNetworkCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PNetworkCalculator.h; sourceTree = "<group>"; };
+		9D8627E9595DD2B2EAFD646B684ED8D4 /* PNetReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PNetReachability.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A03EBAE016A93E44EA36D57C1AC4C88E /* PhoneTraceRoute.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = PhoneTraceRoute.mm; sourceTree = "<group>"; };
 		A36758E5B3585C04DE340D2B63AF8E71 /* PhoneNetSDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PhoneNetSDK; path = PhoneNetSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B9CDF16E6644FAFCB4B2ED1D7E713B /* PhoneNetSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PhoneNetSDK-umbrella.h"; sourceTree = "<group>"; };
 		A3F2E169BD794F8B9E877361F47E22F0 /* Pods-PhoneNetSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhoneNetSDK_Example-dummy.m"; sourceTree = "<group>"; };
+		A863924CB79B377FA0E40CFE28B0AE40 /* PNetInfoTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PNetInfoTool.m; sourceTree = "<group>"; };
 		AB8B6F6697DF2073682DC79A1386BFD7 /* Pods-PhoneNetSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhoneNetSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
+		AE4588EC3485C46632623E470DEAC89C /* PNUdpTraceroute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PNUdpTraceroute.h; sourceTree = "<group>"; };
+		B889A3D9BC32FA328720AE9827E1B813 /* PhoneNetSDKHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PhoneNetSDKHelper.h; sourceTree = "<group>"; };
+		BB976D4BD3AF40F359217B9DA13D7DC2 /* PhoneNetSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PhoneNetSDK-prefix.pch"; sourceTree = "<group>"; };
 		BE6A42BEB6070F333595DC8FBF69ECD3 /* Pods-PhoneNetSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneNetSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CA73FFA8809F1F7D7F6846811264896C /* PhoneNetSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PhoneNetSDK-umbrella.h"; sourceTree = "<group>"; };
-		D6A3190F635648280BC5CA5BA1F1A5DB /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = PhoneNetSDK/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		BF78F3A89D7515F2CB2A933CA661F8E9 /* PNTcpPing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PNTcpPing.m; sourceTree = "<group>"; };
+		CC7443061CC819C5E47145BC45D97A34 /* PNUdpTraceroute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PNUdpTraceroute.m; sourceTree = "<group>"; };
+		D039DBD6213A22A8A012DDD1BC3D9133 /* PhoneNetSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PhoneNetSDK.modulemap; sourceTree = "<group>"; };
 		DE899D6F22BC6695C9F94158BBB3BF31 /* Pods-PhoneNetSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PhoneNetSDK_Example.modulemap"; sourceTree = "<group>"; };
 		DFF34B2B245E4BFC3F1F81F38C3AC76F /* Pods-PhoneNetSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhoneNetSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E37C37459706D2D20955BB694A8A269B /* PNPortScan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PNPortScan.h; sourceTree = "<group>"; };
 		E650DE1FCD1EC1A1B6B15CA47B40B74D /* Pods-PhoneNetSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhoneNetSDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		E6C00FC4ABD374B26AB93CCCBD1DE71E /* UCNetworkService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UCNetworkService.h; sourceTree = "<group>"; };
 		EBAA825018BE4C0DA7581B449280A334 /* Pods-PhoneNetSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhoneNetSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EC3F0E24D771C743AD93E278DCB5B0B7 /* PhoneNetSDKConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PhoneNetSDKConst.h; path = PhoneNetSDK/Classes/PhoneNetSDKConst.h; sourceTree = "<group>"; };
+		F1FF4A5FE891FCA749BBB881D4738521 /* PNetReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PNetReachability.m; sourceTree = "<group>"; };
+		F21962FE43517B6976DF92385B7323EE /* PPingResModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PPingResModel.m; sourceTree = "<group>"; };
+		F66AC6C76D817E23B89E2E1049AE76E1 /* PTracerRouteResModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PTracerRouteResModel.m; sourceTree = "<group>"; };
 		F7FEDDE6764C976E9F38D4DF74BA74C7 /* Pods-PhoneNetSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneNetSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F97D548E1FE33A664D0C21210F6F3C78 /* Pods-PhoneNetSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhoneNetSDK_Example-Info.plist"; sourceTree = "<group>"; };
+		FC418E8FF88112876280B56FF43AE145 /* UCNetworkService.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = UCNetworkService.mm; sourceTree = "<group>"; };
+		FFA1B586A96EF497AD5907844523121C /* PhoneNetSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PhoneNetSDK.h; path = PhoneNetSDK/Classes/PhoneNetSDK.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4D30B47A38021F424243BA9FF55B47AC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8D9F5A6744FF3A12D32B757DCFE9681A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6BB1A7896ECC58816D26BFF3F565FC6E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A9D1A95E64D86BA4FBFEADCD056EBAC7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71A1C6F905A3C34B12F859B26E51B865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D69951B8F9CF6C0FD977D8D23A44BEF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,15 +198,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F51F39C53361721A44B24AC06EEB7E3 /* PhoneNetSDK */ = {
+		16C2523F7D567C312D512F3099BED140 /* control */ = {
 			isa = PBXGroup;
 			children = (
-				D6A3190F635648280BC5CA5BA1F1A5DB /* ReplaceMe.m */,
-				522FCD34DA74A05764724F837B65BA13 /* Pod */,
-				22023F9E7924FB9998C287C15DDC24FA /* Support Files */,
+				56007D557CCEE14EDD0C8961B939AAB7 /* PhoneTraceRoute.h */,
+				A03EBAE016A93E44EA36D57C1AC4C88E /* PhoneTraceRoute.mm */,
+				314DA9662B62430121EC03DB89FEFB3A /* PhoneTraceRouteService.h */,
+				32995DC18C60A44844FA049FE6AD0249 /* PhoneTraceRouteService.m */,
 			);
-			name = PhoneNetSDK;
-			path = ../..;
+			name = control;
+			path = control;
+			sourceTree = "<group>";
+		};
+		1C26ECA603FABCF278228107B50008BF /* lanscan */ = {
+			isa = PBXGroup;
+			children = (
+				2C9030A17DD9112E68C4EF61F19000E4 /* PNetMLanScanner.h */,
+				1C571E871C12301E1D181F6FC0AD8BF4 /* PNetMLanScanner.mm */,
+				82142E27800A44B18195DBC37DDC4812 /* PNSamplePing.h */,
+				83B6CF1E01341A860299C9CFDE9FFADA /* PNSamplePing.mm */,
+			);
+			name = lanscan;
+			path = PhoneNetSDK/Classes/lanscan;
 			sourceTree = "<group>";
 		};
 		21D3739EEDCA7FAD87743821F94320FC /* Targets Support Files */ = {
@@ -118,21 +229,6 @@
 				47C0B5BFD9E305CDFBE6C456DAEA82D8 /* Pods-PhoneNetSDK_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		22023F9E7924FB9998C287C15DDC24FA /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1F425BC193A3D97C58570A70249C70B8 /* PhoneNetSDK.modulemap */,
-				8F4182F5079AE5825DF40414E448193C /* PhoneNetSDK-dummy.m */,
-				474A2498E611EB2A991C7275224A114A /* PhoneNetSDK-Info.plist */,
-				66029485D38538E198BADD4964C2C8D6 /* PhoneNetSDK-prefix.pch */,
-				CA73FFA8809F1F7D7F6846811264896C /* PhoneNetSDK-umbrella.h */,
-				734F586C98FA5A81F9D151B168A71D9F /* PhoneNetSDK.debug.xcconfig */,
-				766EC385D2E26D286A45B24D70E1D713 /* PhoneNetSDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/PhoneNetSDK";
 			sourceTree = "<group>";
 		};
 		47C0B5BFD9E305CDFBE6C456DAEA82D8 /* Pods-PhoneNetSDK_Tests */ = {
@@ -149,16 +245,6 @@
 			);
 			name = "Pods-PhoneNetSDK_Tests";
 			path = "Target Support Files/Pods-PhoneNetSDK_Tests";
-			sourceTree = "<group>";
-		};
-		522FCD34DA74A05764724F837B65BA13 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				22AB0F2E686C00C337C683E596A50AFE /* LICENSE */,
-				86229DED3EB9688639A52DDF4E7837B8 /* PhoneNetSDK.podspec */,
-				14FCF5D431A870A70D9B860A224D4152 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -179,6 +265,72 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		64AF684200EBCEDF3809D69C594826A7 /* udptracert */ = {
+			isa = PBXGroup;
+			children = (
+				AE4588EC3485C46632623E470DEAC89C /* PNUdpTraceroute.h */,
+				CC7443061CC819C5E47145BC45D97A34 /* PNUdpTraceroute.m */,
+			);
+			name = udptracert;
+			path = PhoneNetSDK/Classes/udptracert;
+			sourceTree = "<group>";
+		};
+		6543F94F27F60FA0CA8872B0E3392B89 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				00D9992B0FDC99DC066703A6DCD854B5 /* PhoneNetManager.h */,
+				6801004F32037456D43E0CE6B2E60F21 /* PhoneNetManager.mm */,
+				B889A3D9BC32FA328720AE9827E1B813 /* PhoneNetSDKHelper.h */,
+				ADF84612F06A78F2ACAE70F0168D7D4E /* bean */,
+			);
+			name = public;
+			path = PhoneNetSDK/Classes/public;
+			sourceTree = "<group>";
+		};
+		685130B97572A5DAC91F1B843F123032 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				29411E68A27C190174F0CBFB1C24379C /* LICENSE */,
+				08CB4DCCCCE22EE66B7DAA46B4F4D0DF /* PhoneNetSDK.podspec */,
+				750865AD352AB7EEF9A5659DEE7F1E2E /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		74D228D262E3AE7DC2B4110A0CB7BAF4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7D04736248860D5BC781B98D08330DEE /* PPingResModel.h */,
+				F21962FE43517B6976DF92385B7323EE /* PPingResModel.m */,
+				6F79210497B5DDB7804E598D6EB36998 /* PReportPingModel.h */,
+				5EC48790DA2767400DD41B8430DEEEB9 /* PReportPingModel.m */,
+			);
+			name = model;
+			path = model;
+			sourceTree = "<group>";
+		};
+		761D407F17AAC44CC95B7D6AE18894D7 /* netInfo */ = {
+			isa = PBXGroup;
+			children = (
+				65BBC657A726508A73CC2C0B0C37F818 /* PNetInfoTool.h */,
+				A863924CB79B377FA0E40CFE28B0AE40 /* PNetInfoTool.m */,
+				9D8627E9595DD2B2EAFD646B684ED8D4 /* PNetReachability.h */,
+				F1FF4A5FE891FCA749BBB881D4738521 /* PNetReachability.m */,
+			);
+			name = netInfo;
+			path = PhoneNetSDK/Classes/netInfo;
+			sourceTree = "<group>";
+		};
+		7E9638FD18AD53CA10CFF1E65F64B8D7 /* uping */ = {
+			isa = PBXGroup;
+			children = (
+				C081DF57374FCD4840D0A6EFDABB26A9 /* control */,
+				74D228D262E3AE7DC2B4110A0CB7BAF4 /* model */,
+			);
+			name = uping;
+			path = PhoneNetSDK/Classes/uping;
+			sourceTree = "<group>";
+		};
 		816232F25ECD0F1F40A1B2E46C72787F /* Pods-PhoneNetSDK_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,19 +348,139 @@
 			path = "Target Support Files/Pods-PhoneNetSDK_Example";
 			sourceTree = "<group>";
 		};
-		8A4BDCF6F5535060F4C6062BCA09933B /* Development Pods */ = {
+		85C9FBCF84FE0F177EC4B03C52766DC5 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				1F51F39C53361721A44B24AC06EEB7E3 /* PhoneNetSDK */,
+				87A52CAAD89C765E897E03FD7D36F7CB /* PhoneNetDiagnosisHelper.h */,
+				03CAFDF6A284CA91006130560E2D4011 /* PhoneNetDiagnosisHelper.m */,
 			);
-			name = "Development Pods";
+			name = common;
+			path = PhoneNetSDK/Classes/common;
+			sourceTree = "<group>";
+		};
+		94FA0FBE86AF95CA71239CEDBA635B84 /* tcpping */ = {
+			isa = PBXGroup;
+			children = (
+				79C3F40F9DF331D2A999FB9003DA0A41 /* PNTcpPing.h */,
+				BF78F3A89D7515F2CB2A933CA661F8E9 /* PNTcpPing.m */,
+			);
+			name = tcpping;
+			path = PhoneNetSDK/Classes/tcpping;
+			sourceTree = "<group>";
+		};
+		A8708AB80222E76C8FBEB13FBAAB75A5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D039DBD6213A22A8A012DDD1BC3D9133 /* PhoneNetSDK.modulemap */,
+				03328311B4443210B18A17660AA1C86F /* PhoneNetSDK-dummy.m */,
+				18EE543F27494416DDA87610BEA8FF43 /* PhoneNetSDK-Info.plist */,
+				BB976D4BD3AF40F359217B9DA13D7DC2 /* PhoneNetSDK-prefix.pch */,
+				A3B9CDF16E6644FAFCB4B2ED1D7E713B /* PhoneNetSDK-umbrella.h */,
+				8A36946FED97230F0AE09128C3899AC3 /* PhoneNetSDK.debug.xcconfig */,
+				837225037123B4E752D5DEC79953D219 /* PhoneNetSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PhoneNetSDK";
+			sourceTree = "<group>";
+		};
+		ADF84612F06A78F2ACAE70F0168D7D4E /* bean */ = {
+			isa = PBXGroup;
+			children = (
+				8C63493011A9E63B71EA25BFB5AD520D /* PNetModel.h */,
+				66B17FAEE497E99BD4F079B5CA1C78F6 /* PNetModel.m */,
+			);
+			name = bean;
+			path = bean;
+			sourceTree = "<group>";
+		};
+		B6C08267EB4200E9F24A9B9B0CB435DD /* PhoneNetSDK */ = {
+			isa = PBXGroup;
+			children = (
+				FFA1B586A96EF497AD5907844523121C /* PhoneNetSDK.h */,
+				EC3F0E24D771C743AD93E278DCB5B0B7 /* PhoneNetSDKConst.h */,
+				85C9FBCF84FE0F177EC4B03C52766DC5 /* common */,
+				1C26ECA603FABCF278228107B50008BF /* lanscan */,
+				C631863AD7964A1D062D021693F77D2D /* lookup */,
+				EC5CF12937F552597498B4DA4B61730A /* net */,
+				761D407F17AAC44CC95B7D6AE18894D7 /* netInfo */,
+				685130B97572A5DAC91F1B843F123032 /* Pod */,
+				E5CACF52141E39484C29426C47C16C8F /* portscan */,
+				6543F94F27F60FA0CA8872B0E3392B89 /* public */,
+				A8708AB80222E76C8FBEB13FBAAB75A5 /* Support Files */,
+				94FA0FBE86AF95CA71239CEDBA635B84 /* tcpping */,
+				C460E6304732E9B87E2FD4BD8864C803 /* tools */,
+				64AF684200EBCEDF3809D69C594826A7 /* udptracert */,
+				7E9638FD18AD53CA10CFF1E65F64B8D7 /* uping */,
+				C10441C54540A6E4E4FF2D0EE94C7369 /* utracert */,
+			);
+			name = PhoneNetSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BB8F070C4EB3BA830B0FCEF0DF7EFC05 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1864B24E84339A0907BE6DCD818843D3 /* PTracerRouteResModel.h */,
+				F66AC6C76D817E23B89E2E1049AE76E1 /* PTracerRouteResModel.m */,
+			);
+			name = model;
+			path = model;
+			sourceTree = "<group>";
+		};
+		C081DF57374FCD4840D0A6EFDABB26A9 /* control */ = {
+			isa = PBXGroup;
+			children = (
+				11D3FC0F353F666968DE9A3C0E62457B /* PhonePing.h */,
+				9268CBD3073AC2DBFA8C03E5588C3FA6 /* PhonePing.mm */,
+				9A4CE5683533B4FBD2FFF1366724D369 /* PhonePingService.h */,
+				0DCF4C86406259133E378773ABC2C770 /* PhonePingService.mm */,
+			);
+			name = control;
+			path = control;
+			sourceTree = "<group>";
+		};
+		C10441C54540A6E4E4FF2D0EE94C7369 /* utracert */ = {
+			isa = PBXGroup;
+			children = (
+				16C2523F7D567C312D512F3099BED140 /* control */,
+				BB8F070C4EB3BA830B0FCEF0DF7EFC05 /* model */,
+			);
+			name = utracert;
+			path = PhoneNetSDK/Classes/utracert;
+			sourceTree = "<group>";
+		};
+		C460E6304732E9B87E2FD4BD8864C803 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				552EC4F04F8313467FAA48F1A9F574E0 /* log4cplus_pn.h */,
+				90502E871D6F3C87531E4BC14BDA7E21 /* PNetLog.h */,
+				83A568E0FDC06F31CB11B3B623A0B46D /* PNetLog.mm */,
+				23EE8DE724D79E28AC8101625D9FDACF /* PNetQueue.h */,
+				06D8A12C9F9837D8A6E3B8AA1D61DB82 /* PNetQueue.m */,
+				0B34B08DDF78D0EE24B1DC9B218A830E /* PNetTools.h */,
+				032FCDAC11F79699A0B8DE0A93B70B3F /* PNetTools.m */,
+				9C1B108ED21B802A93D8D3A3BDACC68E /* PNetworkCalculator.h */,
+				05BD36A76F12110B0D5BCC7518E7E7BF /* PNetworkCalculator.m */,
+			);
+			name = tools;
+			path = PhoneNetSDK/Classes/tools;
+			sourceTree = "<group>";
+		};
+		C631863AD7964A1D062D021693F77D2D /* lookup */ = {
+			isa = PBXGroup;
+			children = (
+				5E56FD4C948A8A461CE4808F0452D08E /* PNDomainLookup.h */,
+				750FB6A54D73527DEF138C6DA0A835F0 /* PNDomainLookup.mm */,
+			);
+			name = lookup;
+			path = PhoneNetSDK/Classes/lookup;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				8A4BDCF6F5535060F4C6062BCA09933B /* Development Pods */,
+				E0A61CFD8E7AD4707479D0FE6BB3D712 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				5D55F7430900049EBE16CB7CCC39AA19 /* Products */,
 				21D3739EEDCA7FAD87743821F94320FC /* Targets Support Files */,
@@ -223,9 +495,81 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E0A61CFD8E7AD4707479D0FE6BB3D712 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6C08267EB4200E9F24A9B9B0CB435DD /* PhoneNetSDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		E4E80DC6E97D2E59F55DAA79A536A62D /* control */ = {
+			isa = PBXGroup;
+			children = (
+				E6C00FC4ABD374B26AB93CCCBD1DE71E /* UCNetworkService.h */,
+				FC418E8FF88112876280B56FF43AE145 /* UCNetworkService.mm */,
+			);
+			name = control;
+			path = control;
+			sourceTree = "<group>";
+		};
+		E5CACF52141E39484C29426C47C16C8F /* portscan */ = {
+			isa = PBXGroup;
+			children = (
+				E37C37459706D2D20955BB694A8A269B /* PNPortScan.h */,
+				0932D048531436C6561E73C3007FFEC0 /* PNPortScan.mm */,
+			);
+			name = portscan;
+			path = PhoneNetSDK/Classes/portscan;
+			sourceTree = "<group>";
+		};
+		EC5CF12937F552597498B4DA4B61730A /* net */ = {
+			isa = PBXGroup;
+			children = (
+				E4E80DC6E97D2E59F55DAA79A536A62D /* control */,
+			);
+			name = net;
+			path = PhoneNetSDK/Classes/net;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4F5F4FAD8B00944792751DF822242859 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C74546A0CE4ED281DDD6607994230D6 /* log4cplus_pn.h in Headers */,
+				537081AF781C4BA745720233EE0D6833 /* PhoneNetDiagnosisHelper.h in Headers */,
+				FC31EC35D565EA26C6DA33B4BEBEE565 /* PhoneNetManager.h in Headers */,
+				41749AEEC57A2CAF4F6025D0309D118D /* PhoneNetSDK.h in Headers */,
+				F59BE90FFD5DC3B532518975D5350C5D /* PhoneNetSDK-umbrella.h in Headers */,
+				6AC5AA7F765AC71B5070BB8C932770A7 /* PhoneNetSDKConst.h in Headers */,
+				9412A5DF0EE57EF2C78A14F3D4A9F73F /* PhoneNetSDKHelper.h in Headers */,
+				D4667721F7B439D46AC03BA4C7D27F9A /* PhonePing.h in Headers */,
+				DEBBF2399860465D50882F4D2FC749A9 /* PhonePingService.h in Headers */,
+				C8B900EDC0A99986F0AE6017E9EAC756 /* PhoneTraceRoute.h in Headers */,
+				D844FCD2C002D43279A46CD7552E345C /* PhoneTraceRouteService.h in Headers */,
+				010630D3B61D2585FA0B73122F9F2F96 /* PNDomainLookup.h in Headers */,
+				BD9EBEF201743FDE25FE369FB87092A3 /* PNetInfoTool.h in Headers */,
+				7ABBA85609246FFCEA5C647EEE7B4604 /* PNetLog.h in Headers */,
+				AE777BFDAE8689D690853132C7E5AEE4 /* PNetMLanScanner.h in Headers */,
+				A133714A12957D81BCA71A2EE729D3AA /* PNetModel.h in Headers */,
+				DCAE1746BF205F4E391CB1289F18CB5A /* PNetQueue.h in Headers */,
+				B76C75F3D861B763CE86E10A8AE4A1E7 /* PNetReachability.h in Headers */,
+				F8F675297E38F587C667C86654A3ACBF /* PNetTools.h in Headers */,
+				3A93D50EABBCFC9F6B377E787743D759 /* PNetworkCalculator.h in Headers */,
+				825F0AA7C2DA8B59DE882EFA4099C782 /* PNPortScan.h in Headers */,
+				1F12548BD6BBF3616A2CF87A8D7D84E1 /* PNSamplePing.h in Headers */,
+				30801FBEE6B532991CF487F93FE2C5D4 /* PNTcpPing.h in Headers */,
+				171FC4BC45A669E5246148BCFB29D16F /* PNUdpTraceroute.h in Headers */,
+				6FA7915CC33DEC04DCFA909D5E7B2CA5 /* PPingResModel.h in Headers */,
+				1F2C7EFFF2EB4ECFDBADCAF457ABE631 /* PReportPingModel.h in Headers */,
+				AE522C6712D2D57CD5E444689E266C79 /* PTracerRouteResModel.h in Headers */,
+				FAE459BE381C780D0E7DC8B64E0B42C9 /* UCNetworkService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCFF239ABF2481FB47FCFFF8F8BFDD2E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,14 +583,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8888C6C25CD13C0CD6F9402C45FD991 /* Pods-PhoneNetSDK_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D37C8B99A347C16F7F85C49BFB140E62 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D12B3CE23FBFB368C726D3743A8EA6B0 /* PhoneNetSDK-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +601,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1637BB79787E95550C08B65F8CEC4911 /* PBXTargetDependency */,
+				25A2F4A8B4A61EC408CDA9A8486160DE /* PBXTargetDependency */,
 			);
 			name = "Pods-PhoneNetSDK_Example";
 			productName = Pods_PhoneNetSDK_Example;
@@ -274,12 +610,12 @@
 		};
 		553B16617096BF565D8AA11FC1EE3CBC /* PhoneNetSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D709C8B2F22CA2F8DE6D87E79B8A087 /* Build configuration list for PBXNativeTarget "PhoneNetSDK" */;
+			buildConfigurationList = 8CC6B78B5CDEABDACE3BE74F57FD5F76 /* Build configuration list for PBXNativeTarget "PhoneNetSDK" */;
 			buildPhases = (
-				D37C8B99A347C16F7F85C49BFB140E62 /* Headers */,
-				8984EE78472570148768DE1CD5818F13 /* Sources */,
-				4D30B47A38021F424243BA9FF55B47AC /* Frameworks */,
-				AB09DC966694D6A18211FF9912B1250A /* Resources */,
+				4F5F4FAD8B00944792751DF822242859 /* Headers */,
+				219B8A5DF1A96A90EC3A0EEC580A6363 /* Sources */,
+				71A1C6F905A3C34B12F859B26E51B865 /* Frameworks */,
+				E45528A257AE49A8EE03A546D1170604 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -302,7 +638,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				7284E4C0C69AA9E693CC45431CE57E77 /* PBXTargetDependency */,
+				F807E14056730E3C3B61CC8C87A2422C /* PBXTargetDependency */,
 			);
 			name = "Pods-PhoneNetSDK_Tests";
 			productName = Pods_PhoneNetSDK_Tests;
@@ -353,7 +689,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB09DC966694D6A18211FF9912B1250A /* Resources */ = {
+		E45528A257AE49A8EE03A546D1170604 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,12 +707,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8984EE78472570148768DE1CD5818F13 /* Sources */ = {
+		219B8A5DF1A96A90EC3A0EEC580A6363 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				504D9937EEE586DB3CE36352EE4D9AA9 /* PhoneNetSDK-dummy.m in Sources */,
-				A0BDC0E625DA803F385B574AA603DDFB /* ReplaceMe.m in Sources */,
+				EE684BDF46BF358C3918403023C770E3 /* PhoneNetDiagnosisHelper.m in Sources */,
+				60127157A95E92836E01A405B965C4BE /* PhoneNetManager.mm in Sources */,
+				87B0E02D4035F3E2A8E45DD93D6ABBA9 /* PhoneNetSDK-dummy.m in Sources */,
+				4C8F8A7A43C4F952FC4B1043E91F55F3 /* PhonePing.mm in Sources */,
+				B7E61E4AE806E0D214BE728865DF2FDF /* PhonePingService.mm in Sources */,
+				58E367CEC0F6E1830A7440ED2A5A0EF4 /* PhoneTraceRoute.mm in Sources */,
+				CA13F7EFA8CE3651850B3AC698F8C912 /* PhoneTraceRouteService.m in Sources */,
+				7CF123C0A87667FF4B992D819F6EE375 /* PNDomainLookup.mm in Sources */,
+				F6F063B0958B1CCEC188946502E5E5CA /* PNetInfoTool.m in Sources */,
+				A6D7D635F9B0277DFF5BD8727DBBAADA /* PNetLog.mm in Sources */,
+				336602174E8A78F94F066ABBE73BA447 /* PNetMLanScanner.mm in Sources */,
+				F8839A7327C1AA43ECE99A7D70E02420 /* PNetModel.m in Sources */,
+				FBA59054236B9B44E5C9FF2657F3E3DD /* PNetQueue.m in Sources */,
+				EC651B3C69782CA90DCCEE1B90AA1FDB /* PNetReachability.m in Sources */,
+				D14E70DC04B255D619FD1C18EA78AA82 /* PNetTools.m in Sources */,
+				1568C62CD94B4BB3F95F44EE139A8CF9 /* PNetworkCalculator.m in Sources */,
+				F723EA30A95D7460B3B1DE54CE4456EF /* PNPortScan.mm in Sources */,
+				E5903C5A686E0F139837ABE28A195EC5 /* PNSamplePing.mm in Sources */,
+				2D4C015DF1E8F4AFEE0E3D9D58269CA5 /* PNTcpPing.m in Sources */,
+				6B8833A8D361BC40241260AD9B42CA17 /* PNUdpTraceroute.m in Sources */,
+				44D603644D67D9384FF87E27839369F6 /* PPingResModel.m in Sources */,
+				1F0EAEEF4088AE42B7F0C23C75B6F65D /* PReportPingModel.m in Sources */,
+				7F204C59CDCF97B7E48699BD81EDD62D /* PTracerRouteResModel.m in Sources */,
+				51F5F2F1AF07801F9B401D102FE9BDC4 /* UCNetworkService.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,17 +749,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1637BB79787E95550C08B65F8CEC4911 /* PBXTargetDependency */ = {
+		25A2F4A8B4A61EC408CDA9A8486160DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PhoneNetSDK;
 			target = 553B16617096BF565D8AA11FC1EE3CBC /* PhoneNetSDK */;
-			targetProxy = 53CECA1241EE19DB56107F2661006B73 /* PBXContainerItemProxy */;
+			targetProxy = DA2122D3B7763616F398D700BA0FDCA0 /* PBXContainerItemProxy */;
 		};
-		7284E4C0C69AA9E693CC45431CE57E77 /* PBXTargetDependency */ = {
+		F807E14056730E3C3B61CC8C87A2422C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PhoneNetSDK_Example";
 			target = 00D0CEA5768475BFF116F9ABCAD67EBA /* Pods-PhoneNetSDK_Example */;
-			targetProxy = C3861C11CE11F50C871BD002C1769A50 /* PBXContainerItemProxy */;
+			targetProxy = 66C9345F5DBF438B56AD8FBEE82C842F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -504,67 +862,6 @@
 			};
 			name = Debug;
 		};
-		2AE2CEC3980FDD8679F1DD43DDA38FF6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 734F586C98FA5A81F9D151B168A71D9F /* PhoneNetSDK.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PhoneNetSDK/PhoneNetSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PhoneNetSDK/PhoneNetSDK-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PhoneNetSDK/PhoneNetSDK.modulemap";
-				PRODUCT_MODULE_NAME = PhoneNetSDK;
-				PRODUCT_NAME = PhoneNetSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3097F7518F88581B6F4CBABB2936DA56 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 766EC385D2E26D286A45B24D70E1D713 /* PhoneNetSDK.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PhoneNetSDK/PhoneNetSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PhoneNetSDK/PhoneNetSDK-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PhoneNetSDK/PhoneNetSDK.modulemap";
-				PRODUCT_MODULE_NAME = PhoneNetSDK;
-				PRODUCT_NAME = PhoneNetSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		46ACA339965FDD157312705D28D5D6C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F7FEDDE6764C976E9F38D4DF74BA74C7 /* Pods-PhoneNetSDK_Tests.release.xcconfig */;
@@ -631,6 +928,37 @@
 			};
 			name = Release;
 		};
+		7B259A1924EDB0094B696EF2C70E7CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 837225037123B4E752D5DEC79953D219 /* PhoneNetSDK.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PhoneNetSDK/PhoneNetSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PhoneNetSDK/PhoneNetSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PhoneNetSDK/PhoneNetSDK.modulemap";
+				PRODUCT_MODULE_NAME = PhoneNetSDK;
+				PRODUCT_NAME = PhoneNetSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		82B0E0778B46B1535779CADF8B64B97A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2A6A47EA80A4C15670FC07700D2394E6 /* Pods-PhoneNetSDK_Tests.debug.xcconfig */;
@@ -657,6 +985,36 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9DFB669559D7434B915A085627560CA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A36946FED97230F0AE09128C3899AC3 /* PhoneNetSDK.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PhoneNetSDK/PhoneNetSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PhoneNetSDK/PhoneNetSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PhoneNetSDK/PhoneNetSDK.modulemap";
+				PRODUCT_MODULE_NAME = PhoneNetSDK;
+				PRODUCT_NAME = PhoneNetSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -737,15 +1095,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D709C8B2F22CA2F8DE6D87E79B8A087 /* Build configuration list for PBXNativeTarget "PhoneNetSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2AE2CEC3980FDD8679F1DD43DDA38FF6 /* Debug */,
-				3097F7518F88581B6F4CBABB2936DA56 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -760,6 +1109,15 @@
 			buildConfigurations = (
 				18411D7D02AE4B92FC45D2219B1658A3 /* Debug */,
 				514FA3F344C310EEFC004820AF1ACE62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CC6B78B5CDEABDACE3BE74F57FD5F76 /* Build configuration list for PBXNativeTarget "PhoneNetSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DFB669559D7434B915A085627560CA5 /* Debug */,
+				7B259A1924EDB0094B696EF2C70E7CD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
