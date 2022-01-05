@@ -149,7 +149,7 @@ void tcp_conn_handler()
             [_pingDetails appendString:[NSString stringWithFormat:@"connect failed to %s:%lu, %f ms, error %d\n",inet_ntoa(addr.sin_addr), (unsigned long)_port, conn_time * 1000, r]];
             loss++;
         }
-        _complete(_pingDetails);
+        _complete(_pingDetails, _isStop);
         if (index < _count && !_isStop && r == 0) {
             usleep(1000*100);
         }
@@ -168,7 +168,7 @@ void tcp_conn_handler()
             PNTcpPingResult *pingRes  = [self constPingRes:code ip:ip durations:intervals loss:loss count:index];
             [self.pingDetails appendString:pingRes.description];
         }
-        self.complete(self.pingDetails);
+        self.complete(self.pingDetails, self.isStop);
         free(intervals);
     });
 }
@@ -227,7 +227,7 @@ void tcp_conn_handler()
         struct hostent *remoteHost = gethostbyname(hostaddr);
         if (remoteHost == NULL || remoteHost->h_addr == NULL) {
             [_pingDetails appendString:[NSString stringWithFormat:@"access %@ DNS error..\n",host]];
-            _complete(_pingDetails);
+            _complete(_pingDetails, _isStop);
             return NULL;
         }
         addr.sin_addr = *(struct in_addr *)remoteHost->h_addr;

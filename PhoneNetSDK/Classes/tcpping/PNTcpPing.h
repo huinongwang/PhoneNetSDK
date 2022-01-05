@@ -18,7 +18,7 @@
 
 @end
 
-typedef void (^PNTcpPingHandler)(NSMutableString *);
+typedef void (^PNTcpPingHandler)(NSMutableString *, BOOL);
 
 @interface PNTcpPing : NSObject
 
