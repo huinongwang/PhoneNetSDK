@@ -45,28 +45,36 @@
 + (void)pnet_ping_async:(dispatch_block_t)block
 {
     dispatch_async([PNetQueue shareInstance].pingQueue, ^{
-        block();
+        if (block) {
+            block();
+        }
     });
 }
 
 + (void)pnet_quick_ping_async:(dispatch_block_t)block
 {
     dispatch_async([PNetQueue shareInstance].quickPingQueue, ^{
-        block();
+        if (block) {
+            block();
+        }
     });
 }
 
 + (void)pnet_trace_async:(dispatch_block_t)block
 {
     dispatch_async([PNetQueue shareInstance].traceQueue , ^{
-        block();
+        if (block) {
+            block();
+        }
     });
 }
 
 + (void)pnet_async:(dispatch_block_t)block
 {
     dispatch_async([PNetQueue shareInstance].asyncQueue, ^{
-        block();
+        if (block) {
+            block();
+        }
     });
 }
 @end
