@@ -149,7 +149,7 @@ void tcp_conn_handler()
             [_pingDetails appendString:[NSString stringWithFormat:@"connect failed to %s:%lu, %f ms, error %d\n",inet_ntoa(addr.sin_addr), (unsigned long)_port, conn_time * 1000, r]];
             loss++;
         }
-        _complete(_pingDetails, _isStop);
+        _complete(_pingDetails, NO);
         if (index < _count && !_isStop && r == 0) {
             usleep(1000*100);
         }
@@ -168,7 +168,7 @@ void tcp_conn_handler()
             PNTcpPingResult *pingRes  = [self constPingRes:code ip:ip durations:intervals loss:loss count:index];
             [self.pingDetails appendString:pingRes.description];
         }
-        self.complete(self.pingDetails, self.isStop);
+        self.complete(self.pingDetails, YES);
         free(intervals);
     });
 }
