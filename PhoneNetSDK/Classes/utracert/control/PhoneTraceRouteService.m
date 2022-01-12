@@ -85,4 +85,7 @@ static PhoneTraceRouteService *ucTraceRouteService_instance = NULL;
     _tracertResultHandler(nil,nil, YES);
 }
 
+- (void)tracerouteFaildWithUCTraceRoute:(PhoneTraceRoute *)ucTraceRoute {
+    _tracertResultHandler(@"there is no valid domain in the domain list , traceroute complete..",nil, YES);
+}
 @end

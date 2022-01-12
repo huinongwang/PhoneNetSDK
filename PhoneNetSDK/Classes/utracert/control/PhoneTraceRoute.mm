@@ -97,6 +97,7 @@ typedef enum PNetRecTracertIcmpType{
     if (![self verificationHost:host]) {
         self.isStopTracert = YES;
          log4cplus_warn("PhoneNetTracert", "there is no valid domain in the domain list , traceroute complete..\n");
+        [self.delegate tracerouteFaildWithUCTraceRoute:self];
         return;
     }
     

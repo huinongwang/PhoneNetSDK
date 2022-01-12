@@ -19,6 +19,7 @@ const int kIcmpPacketTimeoutTime                 = 300;   // ICMP包超时时间
 @protocol PhoneTraceRouteDelegate<NSObject>
 - (void)tracerouteWithUCTraceRoute:(PhoneTraceRoute *)ucTraceRoute tracertResult:(PTracerRouteResModel *)tracertRes;
 - (void)tracerouteFinishedWithUCTraceRoute:(PhoneTraceRoute *)ucTraceRoute;
+- (void)tracerouteFaildWithUCTraceRoute:(PhoneTraceRoute *)ucTraceRoute;
 @optional
 
 
