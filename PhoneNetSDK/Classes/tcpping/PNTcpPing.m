@@ -227,7 +227,7 @@ void tcp_conn_handler()
         struct hostent *remoteHost = gethostbyname(hostaddr);
         if (remoteHost == NULL || remoteHost->h_addr == NULL) {
             [_pingDetails appendString:[NSString stringWithFormat:@"access %@ DNS error..\n",host]];
-            _complete(_pingDetails, _isStop);
+            _complete(_pingDetails, YES);
             return NULL;
         }
         addr.sin_addr = *(struct in_addr *)remoteHost->h_addr;
