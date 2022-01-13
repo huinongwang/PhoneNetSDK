@@ -7,12 +7,15 @@
 //
 
 #import "PHONENETSDKAppDelegate.h"
-
+#import <PhoneNetSDK/PhoneNetSDK.h>
 @implementation PHONENETSDKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[PhoneNetManager shareInstance] netStartPing:@"lbs.netease.im" packetCount:3 pingResultHandler:^(NSString * _Nullable pingres, BOOL isEnd) {
+        NSLog(@"netStartPing %@  isEnd  = %ld",pingres,isEnd);
+    }];
     return YES;
 }
 

@@ -85,7 +85,7 @@ static PhonePingService *ucPingservice_instance = NULL;
         PReportPingModel *reportPingModel = [PReportPingModel uReporterPingmodelWithDict:dict];
         
         NSString *pingSummary = [NSString stringWithFormat:@"%d packets transmitted , loss:%d , delay:%0.3fms , ttl:%d",reportPingModel.totolPackets,reportPingModel.loss,reportPingModel.delay,reportPingModel.ttl];
-        self.pingResultHandler(pingSummary);
+        self.pingResultHandler(pingSummary, YES);
         
         [self removePingResFromPingResContainerWithHostName:host];
     }
@@ -122,10 +122,13 @@ static PhonePingService *ucPingservice_instance = NULL;
     
     if (status == PhoneNetPingStatusFinished) {
         return;
+    } else if (status == PhoneNetPingStatusError) {
+        _pingResultHandler(@"There is no valid domain...", YES);
+        return;
     }
     
     NSString *pingDetail = [NSString stringWithFormat:@"%d bytes form %@: icmp_seq=%d ttl=%d time=%.3fms",(int)pingRes.dateBytesLength,pingRes.IPAddress,(int)pingRes.ICMPSequence,(int)pingRes.timeToLive,pingRes.timeMilliseconds];
-    _pingResultHandler(pingDetail);
+    _pingResultHandler(pingDetail, NO);
 }
 
 

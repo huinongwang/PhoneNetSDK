@@ -102,6 +102,7 @@
     if (self.host == NULL) {
         self.isStopPingThread = YES;
         log4cplus_warn("PhoneNetPing", "There is no valid domain...\n");
+        [self reporterPingResWithSorceIp:self.host ttl:0 timeMillSecond:0 seq:0 icmpId:0 dataSize:0 pingStatus:PhoneNetPingStatusError];
         return;
     }
     
